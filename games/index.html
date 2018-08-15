@@ -1,0 +1,112 @@
+
+
+<html ng-app="app" ng-controller="MainController">
+    <head>
+        <title>Games</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title></title>
+
+
+
+
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <link href="public_htmll/style.css" rel="stylesheet" type="text/css"/>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+
+        <script src="controllers/MainController.js" type="text/javascript"></script>
+        <script src="controllers/Game1Controller.js" type="text/javascript"></script>
+        <script src="controllers/Game2Controller.js" type="text/javascript"></script>
+        <script src="controllers/Game3Controller.js" type="text/javascript"></script>
+        <script src="controllers/Game4Controller.js" type="text/javascript"></script>
+        <script src="controllers/Game5Controller.js" type="text/javascript"></script>
+
+
+        <script src="routerConfig.js" type="text/javascript"></script>
+
+        <script src="directives/navigation.js" type="text/javascript"></script>
+        <script src="directives/gameContent.js" type="text/javascript"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ColorPropsPlugin.min.js"></script>
+
+
+
+
+
+
+
+        <script src="libraries/pixi.js" type="text/javascript"></script>
+        <script src="libraries/pixi-spine.js" type="text/javascript"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.6/pixi.js"></script>-->
+
+
+
+
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>-->
+
+
+
+        <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+
+
+
+
+
+        <!--<base href="/games/">-->
+    </head>
+    <body ng-keydown="keyboardEvent($event)" ng-keyup="keyboardEventEnd($event)">
+
+
+
+
+
+    <navigation></navigation>
+    <div ui-view="gameContent"></div>
+    <!--    <div id='gameWindow' style="width:400px; height:640px; border:1px solid black; margin: 0 auto;"></div>-->
+
+
+
+
+    <ui-view ></ui-view>
+
+</body>
+</html>

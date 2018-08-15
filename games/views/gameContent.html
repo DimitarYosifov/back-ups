@@ -1,0 +1,46 @@
+ 
+
+<div id='gameWindow' class="col-lg-10 container">
+    <div id="gameInfo" class="card-header btn-sm">{{gameName}}
+
+    </div>
+
+    <div id='game-container' class="col-sm-12 col-md-9" style="padding: 0px; border:1px solid #00000020; " ng-show="start"></div>
+    <div style="    text-align: center;margin: 0 auto;">
+        <h4>Settings</h4>
+
+        <div>
+            <div ng-repeat="(key,value) in gameSettings track by $index">
+
+                <label for="" style="width: 100%;text-align: left;" class="">{{value.name}}
+
+                    <select class="form-control" ng-model="gameSettings[key].value" ng-init="gameSettings[key].value"  ng-options="x for x in value.options track by x">
+                        <option value="" style="display: none;" ng-disabled="!pause"></option>
+
+                        <!--option ng-repeat="x in value.options track by $index" ng-value="x">{{x}} </option>--> 
+
+                    </select>
+
+                </label>
+            </div>
+
+        </div>
+        
+<!--{{start}}-->
+
+        <div class="" style="text-align: center;">
+            <button ng-click="$parent.startGame()" class="btn" ng-disabled="!pause" class="mb-2">Start Game</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div

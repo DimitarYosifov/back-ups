@@ -1,0 +1,76 @@
+
+nav{
+    padding: 0px !important;
+}
+.nav-li{
+    margin: 0px; 
+    width: 20%; 
+    text-align: center; 
+    border: 1px solid #00000020;
+    color: #5d5d5d !important;
+    cursor: pointer;
+    padding: 10px;
+}
+.nav-li:hover{
+    background: #f1f1f1;
+    color: black !important;
+    text-decoration: none;
+}
+.nav-li-link{
+    /*    margin: 0px; 
+        width: 100%; 
+        text-align: center; 
+        color: #5d5d5d;*/
+}
+#gameInfo{
+    width: 100%;
+}
+#gameWindow{
+    display: flex;
+    flex-wrap: wrap;
+    /*height:640px;*/ 
+    border:1px solid #00000020;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+canvas{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#game-container{
+    
+    
+    
+    
+    
+/*    background: url('../images/space.gif');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+
+/*    background: url('../images/card-table.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+}
+
+@media all and (max-width:576px){
+    .nav-li{
+        width: 100%;
+        text-align: left;
+        border: none !important;
+    }
+    .navbar-expand-sm > div{
+        border: 1px solid rgba(0, 0, 0, 0.125) !important;
+    }
+    #navbarText{
+        min-height:0px !important;
+    }
+    
+    
+    .collapsed{
+        /*height: 45px*/
+    }
+}
